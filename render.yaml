@@ -4,3 +4,10 @@ services:
     env: docker
     dockerfilePath: ./Dockerfile
     dockerContext: .
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: RP_NAME
+        value: openGym
+      - key: DATA_DIR
+        value: /app/data
